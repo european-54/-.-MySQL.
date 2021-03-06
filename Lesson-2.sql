@@ -43,6 +43,6 @@ mysql -u root -p simple <C:\Users\1\Desktop\-.-MySQL\-.-MySQL..git\dump.sql   /*
  
  cd C:\Program Files\MySQL\MySQL Server 8.0\bin   -- данная команда, с указанием пути в командной строке, направит в директорию bin.
 
-mysqldump --opt --where="1 limit 100" mysql help_keyword > help.sql   /* Данная команда с параметрами в СМД создаст
+mysqldump -u root -p --opt --where="1 limit 100" mysql help_keyword > help.sql   /* Данная команда с параметрами в СМД создаст
  дамп единственной таблицы help_keyword базы данных mysql(файл help.sql), причем дамп будет содержать только первые 100 строк таблицы.  */
  
